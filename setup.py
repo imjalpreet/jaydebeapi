@@ -27,11 +27,11 @@ install_requires = [ 'JPype1 ; python_version > "2.7" and platform_python_implem
 setup(
     #basic package data
     name = 'JayDeBeApi',
-    version = '1.2.3',
+    version = '1.2.4',
     author = 'Bastian Bowe',
     author_email = 'bastian.dev@gmail.com',
     license = 'GNU LGPL',
-    url='https://github.com/baztian/jaydebeapi',
+    url='https://github.com/imjalpreet/jaydebeapi',
     description=('Use JDBC database drivers from Python 2/3 or Jython with a DB-API.'),
     long_description=open('README.rst').read(),
     keywords = ('db api java jdbc bridge connect sql jpype jython'),
