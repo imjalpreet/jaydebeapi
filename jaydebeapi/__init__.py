@@ -528,10 +528,9 @@ class Cursor(object):
         if not parameters:
             parameters = ()
         self._close_last()
-        self._prep = self._connection.jconn.prepareStatement(operation)
-        self._set_stmt_parms(self._prep, parameters)
+        self._prep = self._connection.jconn.createStatement()
         try:
-            is_rs = self._prep.execute()
+            is_rs = self._prep.executeQuery(operation)
         except:
             _handle_sql_exception()
         if is_rs:
